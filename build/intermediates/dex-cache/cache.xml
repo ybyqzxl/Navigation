@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/xueli/Documents/asproject/Navigation/app/src/main/jniLibs/Msc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="994d12017bc2c9ba570180cde5500689d134e6e6">
+        <dex dex="/Users/xueli/Documents/asproject/Navigation/app/build/intermediates/transforms/dex/debug/folders/1000/2/Msc_67e7218dea162c1ed726d160089a87c2668cb4fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xueli/Documents/asproject/Navigation/app/libs/AMap_2DMap_V2.9.0_20160525.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="46212fcb15e2fcfcef796ab9f7af3fd1364f98f4">
+        <dex dex="/Users/xueli/Documents/asproject/Navigation/app/build/intermediates/transforms/dex/debug/folders/1000/2/AMap_2DMap_V2.9.0_20160525_14d662e17780ac922cae6f23f8d16e13b4104770/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xueli/Documents/asproject/Navigation/app/src/main/jniLibs/AMap3DMap_3.4.0_AMapNavi_1.9.2_20160830.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ab01a8233716f419ba63d837dbc8a1a8f35ec9e">
+        <dex dex="/Users/xueli/Documents/asproject/Navigation/app/build/intermediates/transforms/dex/debug/folders/1000/2/AMap3DMap_3.4.0_AMapNavi_1.9.2_20160830_a6c7639d44d5e6ab53bcf6132b9577496fea0280/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xueli/Documents/asproject/Navigation/app/libs/AMap_Location_V2.4.1_20160414.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2a48661c11bfafb2dea576904958420c2ad9e06">
+        <dex dex="/Users/xueli/Documents/asproject/Navigation/app/build/intermediates/transforms/dex/debug/folders/1000/2/AMap_Location_V2.4.1_20160414_6951f1ffc3f0733c87dc6e61eb63ccc6be62eb8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xueli/Documents/asproject/Navigation/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1d76ca364d670663aaf1807ce9882c0cb599ff97">
+        <dex dex="/Users/xueli/Documents/asproject/Navigation/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c5e1e28b9184e4b2b4307daa22dad6e3d84cabde/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xueli/Documents/asproject/Navigation/app/libs/AMap_Search_V3.3.0_20160616.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c48cb8f3e8bde93009a28c13b0f7b984b3039d3b">
+        <dex dex="/Users/xueli/Documents/asproject/Navigation/app/build/intermediates/transforms/dex/debug/folders/1000/2/AMap_Search_V3.3.0_20160616_9611093b289bc399f892e5372643124feb173a20/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/xueli/Documents/asproject/Navigation/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/xueli/Documents/asproject/Navigation/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d42fd4295b01e50b276257ff2b37b8f3498b1a37/classes.dex" />
+    </item>
+
+</items>

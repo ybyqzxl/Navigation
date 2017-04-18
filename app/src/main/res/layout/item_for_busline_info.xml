@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_for_ll"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_start"
+            android:layout_width="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/lightgray"/>
+
+        <ImageView
+            android:id="@+id/bus_state"
+            android:layout_width="28px"
+            android:layout_height="28px"
+            android:src="@drawable/dot"/>
+
+        <View
+            android:id="@+id/view_end"
+            android:layout_width="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/lightgray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_busStationName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:text="1111111"
+            android:textSize="17sp"/>
+
+        <View
+            android:id="@+id/arount_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/lightgray"/>
+
+        <LinearLayout
+            android:id="@+id/ll_station_around"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_around"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_for_ll"
+                android:drawableTop="@drawable/around_near"
+                android:gravity="center"
+                android:text="周边"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/lightgray"/>
+
+            <TextView
+                android:id="@+id/tv_route"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_for_ll"
+                android:drawableTop="@drawable/route_station"
+                android:gravity="center"
+                android:text="路线"/>
+
+            <TextView
+                android:id="@+id/tv_map"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_for_ll"
+                android:drawableTop="@drawable/tv_map"
+                android:gravity="center"
+                android:text="地图"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

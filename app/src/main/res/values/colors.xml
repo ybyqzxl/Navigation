@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tabTextColor">#56abe4</color>
+    <color name="white">#ffffff</color>
+    <color name="lightblack">#60000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightgray">#44989898</color>
+    <color name="blue">#4c90f9</color>
+    <color name="act_background">#efefef</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <color name="black">#000000</color>
+    <color name="divider_color">#efeff3</color>
+    <color name="gray_main">#F3F5F7</color>
+    <color name="light_blue">#8fcfe8</color>
+    <color name="board">#cbcbcb</color>
+    <color name="exit_pressed">#F1F1F7</color>
+    <color name="titleColor">#33aadd</color>
+</resources>

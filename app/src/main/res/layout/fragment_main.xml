@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main_ll"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/titleColor"
+        android:gravity="center"
+        android:stretchColumns="1"
+        >
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/iv_new_saoyisao"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/saoyisao"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/edt_search_station"
+                android:layout_height="40dp"
+                android:background="@drawable/shape"
+                android:drawableLeft="@drawable/icon_search"
+                android:drawablePadding="5dp"
+                android:hint="搜索车站或线路"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_new_search"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search_main"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查找线路:"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/iv_new_trance"
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/bg_for_image_button"
+                android:gravity="center"
+                android:padding="3dp"
+                android:src="@drawable/iconfont_zhuanhuan"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/new_start"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_for_edittext_in_map"
+                    android:completionThreshold="1"
+                    android:dropDownSelector="@drawable/main_map_menu_bg"
+                    android:dropDownVerticalOffset="2dp"
+                    android:hint="请输入起点"
+                    android:imeOptions="actionDone"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/new_end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_for_edittext_in_map"
+                    android:completionThreshold="1"
+                    android:dropDownSelector="@drawable/main_map_menu_bg"
+                    android:dropDownVerticalOffset="2dp"
+                    android:hint="请输入终点"
+                    android:imeOptions="actionDone"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_route_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/bg_for_ll"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_clear_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/clear"
+            android:gravity="center"
+            android:text="清空历史记录"/>
+
+        <ListView
+            android:id="@+id/list_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

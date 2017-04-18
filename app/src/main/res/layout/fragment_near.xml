@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="panda.li.navigation.fragment.NearFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/near_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="附近"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/near_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/near_toolbar"
+        android:background="@color/lightgray"/>
+
+    <LinearLayout
+        android:id="@+id/near_ll_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/near_view_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_food"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/food"
+                android:text="美食"/>
+
+            <TextView
+                android:id="@+id/tv_bus"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/chuxing"
+                android:text="出行"/>
+
+            <TextView
+                android:id="@+id/tv_bank"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/bank"
+                android:text="银行"/>
+
+            <TextView
+                android:id="@+id/tv_hospital"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/hospital"
+                android:text="医院"/>
+
+            <TextView
+                android:id="@+id/tv_fun"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/fun"
+                android:text="休闲"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView_chaoshi"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="超市"/>
+
+            <TextView
+                android:id="@+id/textView_ktv"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="KTV"/>
+
+            <TextView
+                android:id="@+id/textView_yushi"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="浴室"/>
+
+            <TextView
+                android:id="@+id/textView_atm"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="ATM"/>
+
+            <TextView
+                android:id="@+id/textView_wb"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="网吧"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView_xyl"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="学院楼"/>
+
+            <TextView
+                android:id="@+id/textView_649"
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="校车649"
+                android:visibility="invisible"/>
+
+            <TextView
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="浴室"
+                android:visibility="invisible"/>
+
+            <TextView
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="ATM"
+                android:visibility="invisible"/>
+
+            <TextView
+                style="@style/text_map_menu_top"
+                android:layout_weight="1"
+                android:text="网吧"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgray"/>
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/near_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/near_ll_select"
+        android:layout_marginTop="2dp"/>
+
+    <RelativeLayout
+        android:id="@+id/poi_detail"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/poi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#5566b8"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/poi_address"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/poi_name"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+</RelativeLayout>

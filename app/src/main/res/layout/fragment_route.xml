@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="panda.li.navigation.fragment.RouteFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/route_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="路线规划"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgray"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/start"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_for_edittext_in_map"
+                    android:completionThreshold="1"
+                    android:dropDownSelector="@drawable/main_map_menu_bg"
+                    android:dropDownVerticalOffset="2dp"
+                    android:hint="请输入起点"
+                    android:imeOptions="actionDone"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/end"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_for_edittext_in_map"
+                    android:completionThreshold="1"
+                    android:dropDownSelector="@drawable/main_map_menu_bg"
+                    android:dropDownVerticalOffset="2dp"
+                    android:hint="请输入终点"
+                    android:imeOptions="actionDone"
+                    android:padding="3dp"
+                    android:singleLine="true"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton_zhuanhuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/bg_for_image_button"
+                android:gravity="center"
+                android:padding="3dp"
+                android:src="@drawable/iconfont_zhuanhuan"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/lightgray"/>
+
+    <LinearLayout
+        android:id="@+id/bus_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/bus_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#00000000">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
